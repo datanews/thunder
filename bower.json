@@ -1,0 +1,25 @@
+{
+  "name": "thunder",
+  "version": "0.0.1",
+  "homepage": "https://github.com/datanews/thunder",
+  "authors": [
+    "Alan Palazzolo <apalazzolo@wnyc.org>"
+  ],
+  "description": "SRCCON 2015 lightning talks mini-site",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "normalize-css": "~3.0.3",
+    "ractive": "~0.7.3",
+    "tabletop": "~1.4.2"
+  }
+}

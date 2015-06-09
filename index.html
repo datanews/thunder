@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SRCCON 2015 Ligtning Talks | SRCCON: June 25–26, Minneapolis</title>
+     <meta name="Description" content="SRCCON, June 25-26 2015 in Minneapolis, is a participatory, interactive conference centered on the challenges that news technology and data teams encounter every day.">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <!-- Let's use the SRCCON site basics -->
+    <link rel="stylesheet" href="http://srccon.org/media/css/2015.css" />
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css" />
+
+  <body>
+    <div class="content-wrapper">
+      <h1>SRCCON 2015 Lightning Talks</h1>
+
+      <p class="intro">
+        SRCCON 2015 will continue its tradition of fun evening events with hosting Lightning Talks Thursday night.  Lightning talks are a set of presentations each of which is a strict 5 minutes (seriously, only 5 minutes).  The topic is open to anything you want &mdash; we want to hear about your surprising interests, hobbies, and passions (journalism related or not).
+      </p>
+
+      <h2>Talks</h2>
+
+      <p class="note">The following is just a working list of talks proposed and does not reflect the actual schedule.  Depending on interest, we may go through a curation process to limit the accepted presentations.</p>
+
+      <div id="talks-list">
+        <div class="loading">Loading list ...</div>
+      </div>
+
+      <h2>Submit a talk</h2>
+
+      <iframe src="https://docs.google.com/forms/d/1la_EToABMVq8WnGu4zu3-rIb6zdSAQBOrvmjjCgVj3Q/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">
+        <div class="loading">Loading submission form ...</div>
+      </iframe>
+
+      <div class="footer">
+        <p class="note">Made and organized by your friends at <a href="http://datanews.tumblr.com/" target="_blank">WNYC DataNews</a>, <a href="http://nerds.inn.org/" target="_blank">INN</a>, and previously <a href="http://code.minnpost.com/" target="_blank">MinnPost MinnData</a>.  Cross-browser testing not preformed; <a href="http://browsehappy.com/" target="_blank">deal with it</a>.
+      </div>
+    </div>
+
+    <!-- templates -->
+    <script id="talks-template" type="text/ractive">
+      {{^talks}}
+        <div class="loading">No talks found.  Submit one below</div>
+      {{/talks}}
+
+      {{#talks}}
+        <div class="talk">
+          <h3>{{ title }}</h3>
+
+          <div class="names">by {{ names }}</div>
+
+          <p class="description">{{ description }}</p>
+      {{/talks}}
+    </script>
+
+
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/ractive/ractive.min.js"></script>
+    <script src="bower_components/tabletop/src/tabletop.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>

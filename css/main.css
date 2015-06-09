@@ -1,0 +1,92 @@
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'PT Serif', serif;
+  color: #404040;
+}
+
+
+h1, h2, h3, h4, h5, .heading {
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #404040;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+p {
+  margin-top: 0;
+}
+
+iframe {
+  margin-bottom: 2em;
+}
+
+.content-wrapper {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.intro {
+  font-size: 1.5em;
+  margin-bottom: 3em;
+  font-style: italic;
+  color: #686868;
+}
+
+.note {
+  font-size: 1.25em;
+}
+
+.footer {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  border-top: 1px solid #686868;
+  color: #686868;
+}
+
+.loading {
+  margin: 3em 0;
+  text-align: center;
+  font-style: italic;
+  color: #686868;
+}
+
+#talks-list {
+  max-width: 50em;
+  margin: 0 auto;
+  padding-top: 1em;
+  margin-bottom: 5em;
+}
+
+.talk {
+  margin-bottom: 2em;
+}
+
+.talk h3 {
+  font-size: 1.25em;
+  margin-bottom: 0em;
+}
+
+.talk .names {
+  font-family: 'PT Sans', sans-serif;
+  color: #686868;
+  font-size: 1em;
+  margin-bottom: 0.25em;
+}
+
+.talk .description {
+  line-height: 1.5em;
+  font-size: 1em;
+}
