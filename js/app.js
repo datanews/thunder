@@ -3,7 +3,8 @@
   var translations = {
     'Description of presentation': 'description',
     'Title of presentation': 'title',
-    'Name of presenter(s)': 'names'
+    'Name of presenter(s)': 'names',
+    Unpublish: 'unpublish'
   };
 
   // Get data from spreadsheet
@@ -24,6 +25,11 @@
       });
 
       return t;
+    });
+
+    // Filter
+    talks = _.filter(talks, function(t, ti) {
+      return t.unpublish.toLowerCase() !== 'y';
     });
 
     // Put into template
